@@ -1,20 +1,18 @@
 {
-	"name": "jump",
-	"displayName": "Jump",
-	"description": "",
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
 	"version": "0.0.0",
+	"publisher": "scottwillmoore",
+	"name": "experiments",
+	"displayName": "Scott's Experiments",
+	"description": "Scott's incubator for new extension features and ideas",
+	"license": "MIT",
 	"engines": {
+		"node": "^18.5.0",
+		"npm": "^9.0.0",
 		"vscode": "^1.82.0"
 	},
 	"main": "./outputs/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "jump.helloWorld",
-				"title": "Hello, World!"
-			}
-		]
-	},
 	"scripts": {
 		"build": "tsc",
 		"check": "prettier --check .",
@@ -22,9 +20,9 @@
 		"watch": "tsc --watch"
 	},
 	"devDependencies": {
-		"@types/node": "^18.17.15",
+		"@types/node": "^18.5.0",
 		"@types/vscode": "^1.82.0",
-		"prettier": "^3.0.3",
-		"typescript": "^5.2.2"
+		"prettier": "^3.0.0",
+		"typescript": "^5.2.0"
 	}
 }
