@@ -1,0 +1,30 @@
+{
+	"name": "jump",
+	"displayName": "Jump",
+	"description": "",
+	"version": "0.0.0",
+	"engines": {
+		"vscode": "^1.82.0"
+	},
+	"main": "./outputs/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "jump.helloWorld",
+				"title": "Hello, World!"
+			}
+		]
+	},
+	"scripts": {
+		"build": "tsc",
+		"check": "prettier --check .",
+		"fix": "prettier --write .",
+		"watch": "tsc --watch"
+	},
+	"devDependencies": {
+		"@types/node": "^18.17.15",
+		"@types/vscode": "^1.82.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	}
+}

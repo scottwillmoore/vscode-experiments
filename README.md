@@ -1,0 +1,6 @@
+- Fix `.gitignore`
+- Fix `.vscodeignore`
+- Fix `.vscode/`
+- Fix `package.json`
+- Update `README.md`
+- Update `CHANGELOG.md`
