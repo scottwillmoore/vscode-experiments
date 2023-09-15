@@ -10,6 +10,14 @@
 	"activationEvents": [
 		"onStartupFinished"
 	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "scottwillmoore.experiments.run",
+				"title": "Run Experiment"
+			}
+		]
+	},
 	"scripts": {
 		"build": "tsc",
 		"check": "prettier --check .",

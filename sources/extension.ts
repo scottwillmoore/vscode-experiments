@@ -1,7 +1,16 @@
-import path from "path";
+import * as path from "path";
 import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext): void {
+	vscode.commands.registerCommand("scottwillmoore.experiments.run", async () => {
+		// const fileNesting = vscode.workspace.getConfiguration("explorer.fileNesting");
+		// console.log(fileNesting.get("enabled"));
+		// console.log(fileNesting.get("patterns"));
+		// console.log(vscode.window.tabGroups);
+		// console.log(vscode.window.visibleTextEditors);
+		// console.log(await vscode.commands.executeCommand("vscode.getEditorLayout"));
+	});
+
 	vscode.workspace.onDidOpenTextDocument(
 		async (event) => {
 			const fromExtension = ".jsx";
@@ -12,9 +21,6 @@ export function activate(context: vscode.ExtensionContext): void {
 				const base = path.posix.basename(event.uri.path, extension);
 				const uri = vscode.Uri.joinPath(event.uri, `../${base}${toExtension}`);
 
-				// const stat = await vscode.workspace.fs.stat(uri);
-				// const textDocument = await vscode.workspace.openTextDocument(uri);
-
 				try {
 					await vscode.window.showTextDocument(uri, {
 						preserveFocus: true,
@@ -22,6 +28,16 @@ export function activate(context: vscode.ExtensionContext): void {
 					});
 				} catch {}
 			}
+		},
+		undefined,
+		context.subscriptions,
+	);
+
+	vscode.workspace.onWillRenameFiles(
+		async (_event) => {
+			const fileNesting = vscode.workspace.getConfiguration("explorer.fileNesting");
+			console.log(fileNesting.get("enabled"));
+			console.log(fileNesting.get("patterns"));
 		},
 		undefined,
 		context.subscriptions,
