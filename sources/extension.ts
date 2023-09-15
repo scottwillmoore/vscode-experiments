@@ -1,5 +1,9 @@
 import * as vscode from "vscode";
 
-export function activate(_context: vscode.ExtensionContext): void {}
-
-export function deactivate(): void {}
+export function activate(context: vscode.ExtensionContext): void {
+	context.subscriptions.push(
+		vscode.workspace.onDidOpenTextDocument((event) => {
+			console.log(event.fileName);
+		}),
+	);
+}
