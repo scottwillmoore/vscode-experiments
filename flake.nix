@@ -33,6 +33,7 @@
           mkShell {
             nativeBuildInputs = [
               nodejs
+              vsce
             ];
           };
       };

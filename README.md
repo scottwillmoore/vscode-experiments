@@ -4,10 +4,6 @@ Scott's incubator for for new extension features and ideas. A place for experime
 
 ## Tasks
 
-- Check `.gitignore`
-- Check `.vscodeignore`
-- Check `.vscode/`
-- Check `package.json`
 - Update `README.md`
 - Update `CHANGELOG.md`
 - Setup GitHub actions

@@ -1,0 +1,13 @@
+.direnv/
+.github/
+.vscode/
+outputs/**/*.map
+sources/
+workspaces/
+.envrc
+.gitignore
+.prettierignore
+.prettierrc
+flake.lock
+flake.nix
+tsconfig.json
