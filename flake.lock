@@ -18,18 +18,38 @@
         "type": "github"
       }
     },
+    "nix-foundations": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nix-packages": "nix-packages",
+        "nix-systems": "nix-systems"
+      },
+      "locked": {
+        "lastModified": 1695985096,
+        "narHash": "sha256-/28u07ctZtye8x9YeGlBe96ljhZzb1zPAmrN/K4V9Ts=",
+        "owner": "scottwillmoore",
+        "repo": "nix-foundations",
+        "rev": "e4d6ba4a0b88835f6b865b9dd06808fcd99ca86b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "scottwillmoore",
+        "repo": "nix-foundations",
+        "type": "github"
+      }
+    },
     "nix-packages": {
       "locked": {
-        "lastModified": 1694593561,
-        "narHash": "sha256-WSaIQZ5s9N9bDFkEMTw6P9eaZ9bv39ZhsiW12GtTNM0=",
+        "lastModified": 1695830400,
+        "narHash": "sha256-gToZXQVr0G/1WriO83olnqrLSHF2Jb8BPcmCt497ro0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1697b7d480449b01111e352021f46e5879e47643",
+        "rev": "8a86b98f0ba1c405358f1b71ff8b5e1d317f5db2",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixpkgs-unstable",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -69,9 +89,7 @@
     },
     "root": {
       "inputs": {
-        "flake-parts": "flake-parts",
-        "nix-packages": "nix-packages",
-        "nix-systems": "nix-systems"
+        "nix-foundations": "nix-foundations"
       }
     }
   },
