@@ -1,0 +1,30 @@
+{
+	"private": true,
+	"version": "0.0.0",
+	"publisher": "scottwillmoore",
+	"name": "experiments",
+	"displayName": "Scott's Experiments",
+	"description": "Scott's incubator for new extension ideas",
+	"license": "MIT",
+	"main": "./outputs/extension.js",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "scottwillmoore.experiments.run",
+				"title": "Run Experiment"
+			}
+		]
+	},
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc --watch"
+	},
+	"engines": {
+		"node": "^18.5.0",
+		"npm": "^9.0.0",
+		"vscode": "^1.82.0"
+	}
+}

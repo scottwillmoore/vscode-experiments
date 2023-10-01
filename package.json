@@ -1,38 +1,19 @@
 {
 	"private": true,
-	"version": "0.0.0",
-	"publisher": "scottwillmoore",
-	"name": "experiments",
-	"displayName": "Scott's Experiments",
-	"description": "Scott's incubator for new extension features and ideas",
-	"license": "MIT",
-	"main": "./outputs/extension.js",
-	"activationEvents": [
-		"onStartupFinished"
+	"workspaces": [
+		"./packages/*"
 	],
-	"contributes": {
-		"commands": [
-			{
-				"command": "scottwillmoore.experiments.run",
-				"title": "Run Experiment"
-			}
-		]
-	},
 	"scripts": {
-		"build": "tsc",
+		"build": "turbo run build",
 		"check": "prettier --check .",
 		"fix": "prettier --write .",
-		"watch": "tsc --watch"
-	},
-	"engines": {
-		"node": "^18.5.0",
-		"npm": "^9.0.0",
-		"vscode": "^1.82.0"
+		"watch": "turbo run watch"
 	},
 	"devDependencies": {
 		"@types/node": "^18.5.0",
 		"@types/vscode": "^1.82.0",
-		"prettier": "^3.0.0",
-		"typescript": "^5.2.0"
+		"prettier": "^3.0.3",
+		"turbo": "^1.10.14",
+		"typescript": "^5.2.2"
 	}
 }

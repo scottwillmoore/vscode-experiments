@@ -1,6 +1,6 @@
-# Scott's Experiments
+# Scott's Extensions
 
-Scott's incubator for for new extension features and ideas. A place for experiments that don't yet deserve their own extension...
+A repository of my Visual Studio Code extensions.
 
 ## Tasks
 

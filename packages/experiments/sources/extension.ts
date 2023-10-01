@@ -9,6 +9,7 @@ export function activate(context: vscode.ExtensionContext): void {
 		// console.log(vscode.window.tabGroups);
 		// console.log(vscode.window.visibleTextEditors);
 		// console.log(await vscode.commands.executeCommand("vscode.getEditorLayout"));
+		console.log("Hello, World!");
 	});
 
 	vscode.workspace.onDidOpenTextDocument(

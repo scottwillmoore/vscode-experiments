@@ -1,22 +1,16 @@
 {
 	"version": "0.2.0",
+
 	"configurations": [
 		{
-			"args": ["--disable-extensions", "--extensionDevelopmentPath=${workspaceFolder}"],
-			"name": "Run Extension",
-			"outFiles": ["${workspaceFolder}/outputs/**/*.js"],
-			"preLaunchTask": "${defaultBuildTask}",
-			"request": "launch",
-			"type": "extensionHost"
-		},
-		{
+			"name": "Run Extension in Basic Workspace",
+
 			"args": [
 				"--disable-extensions",
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"${workspaceFolder}/workspaces/basic/"
+				"--extensionDevelopmentPath=${workspaceFolder}/packages/experiments",
+				"${workspaceFolder}/workspaces/basic"
 			],
-			"name": "Run Extension in Basic Workspace",
-			"outFiles": ["${workspaceFolder}/outputs/**/*.js"],
+			"outFiles": ["${workspaceFolder}/packages/experiments/outputs/**/*.js"],
 			"preLaunchTask": "${defaultBuildTask}",
 			"request": "launch",
 			"type": "extensionHost"

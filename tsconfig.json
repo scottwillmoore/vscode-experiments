@@ -16,13 +16,11 @@
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"outDir": "./outputs",
+		"preserveWatchOutput": true,
 		"resolveJsonModule": true,
-		"rootDir": "./sources",
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
 		"target": "ES2022"
-	},
-	"include": ["./sources"]
+	}
 }

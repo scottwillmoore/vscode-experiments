@@ -1,0 +1,9 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./outputs",
+		"rootDir": "./sources"
+	},
+	"include": ["./sources"]
+}

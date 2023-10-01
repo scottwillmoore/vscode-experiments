@@ -23,11 +23,12 @@
 	},
 	"editor.formatOnSave": true,
 	"files.readonlyInclude": {
-		".direnv/**": true,
-		"flake.lock": true,
-		"node_modules/**": true,
-		"outputs/**": true,
-		"package-lock.json": true
+		"**/.direnv/**": true,
+		"**/.turbo/**": true,
+		"**/flake.lock": true,
+		"**/node_modules/**": true,
+		"**/outputs/**": true,
+		"**/package-lock.json": true
 	},
 	"typescript.tsc.autoDetect": "off",
 	"typescript.tsdk": "node_modules/typescript/lib"
